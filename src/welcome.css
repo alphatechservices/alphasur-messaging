@@ -1,0 +1,124 @@
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .welcomeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #DFF5E6;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .welcomeText {
+    font-size: 48px;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    text-align: center;
+  }
+  
+  .logo {
+    width: 300px;
+    margin-bottom: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .welcomeButton {
+    padding: 15px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-width: 200px;
+    text-align: center;
+  }
+  
+  .loginButtonHover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .buttonIcon {
+    font-size: 20px;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @media (max-width: 768px) {
+    .welcomeText {
+      font-size: 32px;
+    }
+  
+    .logo {
+      width: 200px;
+    }
+  
+    .buttonContainer {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .loginButton {
+      padding: 10px 15px;
+      font-size: 16px;
+      min-width: 150px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .welcomeText {
+      font-size: 24px;
+    }
+  
+    .logo {
+      width: 150px;
+    }
+  
+    .loginButton {
+      padding: 8px 12px;
+      font-size: 14px;
+      min-width: 120px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .welcomeText {
+      font-size: 20px;
+      color: #34495e;
+    }
+
+    .welcomeButton {
+      min-width: 200px;
+      font-size: 12px;
+      padding: 10px 0;
+    }
+
+  }
+  
