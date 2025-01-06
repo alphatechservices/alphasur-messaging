@@ -698,6 +698,94 @@ select {
   border-bottom-right-radius: 8px;
 }
 
+
+/* LOGIN PAGE */
+
+/* LOGIN PAGE */
+
+/* Container principal */
+.bodyLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #dff5e6;
+  padding: 20px;
+}
+
+/* Contenu du formulaire et de l'image */
+.login-content {
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Style du formulaire */
+.login-form {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loginText {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* Formulaire de connexion */
+.login-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginInput {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.loginButton {
+  padding: 15px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loginButton:hover {
+  background-color: #0056b3;
+}
+
+/* Image à droite */
+.login-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
 /* Optional: Styling for table responsiveness */
 @media (max-width: 600px) {
   .codes-table th,
