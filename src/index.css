@@ -785,6 +785,95 @@ select {
   object-fit: cover;
 }
 
+/* PAGE USERS */
+
+.users {
+  background-color: white;
+  margin-top: 5rem;
+  padding: 20px 15px;
+}
+
+.tables {
+  display: grid;
+  grid-template-columns: 2fr 1fr 3fr 0.5fr 2fr 1.5fr 1fr 1.5fr; /* Ajuste le nombre de colonnes selon les données */
+  flex-wrap: nowrap;
+  margin: 20px 0px;
+}
+
+.table-headers {
+  display: contents; /* Utilise 'contents' pour que les éléments enfants fonctionnent dans la grille */
+  font-weight: bold;
+  text-align: center;
+}
+
+.table-rows {
+  display: contents; /* Utilise 'contents' pour que chaque ligne suive la grille */
+}
+
+.tables div {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.tablE {
+  display: grid;
+  grid-template-columns: 2fr 2fr; /* Ajuste le nombre de colonnes selon les données */
+  flex-wrap: nowrap;
+  /* gap: 10px; */
+  margin: 20px 0;
+}
+
+.tablE-headers {
+  display: contents; /* Utilise 'contents' pour que les éléments enfants fonctionnent dans la grille */
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+/* Liste des éléments */
+.email-publication-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Élément de la liste */
+.email-publication-item {
+  padding: 15px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Texte email, nom et description */
+.email-publication-item p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.email-publication-item .email {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.email-publication-item .name {
+  color: #28a745;
+}
+
+.email-publication-item .description {
+  color: #6c757d;
+  font-style: italic;
+}
+
+/* Message de chargement */
+.loading-message {
+  font-size: 18px;
+  text-align: center;
+  color: #555;
+}
+
+
 
 /* Optional: Styling for table responsiveness */
 @media (max-width: 600px) {

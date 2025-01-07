@@ -200,11 +200,13 @@ function CustomerService() {
     }
   };
 
-
   const goToMessage = () => {
     navigate("/message");
   };
 
+  const goToUsers = () => {
+    navigate("/utilisateurs");
+  };
 
   useEffect(() => {
     const fetchRequest = async () => {
@@ -342,12 +344,14 @@ function CustomerService() {
             <button onClick={goToMessage} className="customButton">
               Aller à la page Message
             </button>
+            <button onClick={goToUsers} className="customButton">
+              Liste des utilisateurs
+            </button>
           </div>
         </div>
 
         <div className={`menu-bar ${isMenuOpen ? "open" : "closed"}`}>
           <button onClick={goToMessage}>Aller à la page Message</button>
-
         </div>
       </div>
 

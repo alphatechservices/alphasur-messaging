@@ -4,6 +4,7 @@ import Welcome from './page/welcome';
 import CustomerService from './page/customerService';
 import MessagingScreen from './page/messageDetails';
 import LoginAdmin from './page/loginAdmin';
+import Users from './page/users';
 
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
                 <Route path="/login_admin" element={<LoginAdmin />} />
                 <Route path="/customer-service" element={<CustomerService />} />
                 <Route path="/message" element={<MessagingScreen />} />
+                <Route path="/utilisateurs" element={<Users />} />
             </Routes>
         </Router>
     );
